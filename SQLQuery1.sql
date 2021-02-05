@@ -1,0 +1,30 @@
+USE master;
+
+CREATE DATABASE MyDBTEst
+COLLATE Croatian_CI_AS;
+ALTER DATABASE MyDBTEst SET RECOVERY SIMPLE;
+
+USE MyDBTEst;
+
+CREATE TABLE Zaposlenici(
+Id SMALLINT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+Sifra VARCHAR(3) NULL UNIQUE,
+Prezime VARCHAR(25) NULL,
+Ime VARCHAR(25) NULL,
+Pol TINYINT NULL,
+Grad VARCHAR(50) NULL,
+Adresa VARCHAR(70) NULL,
+DatumDodavanja DATETIME NULL,
+DatumIzmjene DATETIME NULL
+);
+
+CREATE TABLE Zaposlenici_Dogadjaji(
+Id SMALLINT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+Zaposlenici_Id SMALLINT FOREIGN KEY REFERENCES Zaposlenici(Id) NULL,
+Datum DATETIME NULL,
+TekstDogadjaja VARCHAR(1000) NULL
+);
+
+select * from Zaposlenici_Dogadjaji;
+
+select * from Zaposlenici;
