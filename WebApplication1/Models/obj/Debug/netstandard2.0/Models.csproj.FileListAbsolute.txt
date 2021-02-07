@@ -7,3 +7,12 @@ D:\Dektop app test\WebApplication1\Models\obj\Debug\netstandard2.0\Models.csproj
 D:\Dektop app test\WebApplication1\Models\obj\Debug\netstandard2.0\Models.dll
 D:\Dektop app test\WebApplication1\Models\obj\Debug\netstandard2.0\Models.pdb
 D:\Dektop app test\WebApplication1\Models\obj\Debug\netstandard2.0\Models.csprojAssemblyReference.cache
+D:\Imel_Zadatak\WebApplication1\Models\bin\Debug\netstandard2.0\Models.deps.json
+D:\Imel_Zadatak\WebApplication1\Models\bin\Debug\netstandard2.0\Models.dll
+D:\Imel_Zadatak\WebApplication1\Models\bin\Debug\netstandard2.0\Models.pdb
+D:\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.AssemblyInfoInputs.cache
+D:\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.AssemblyInfo.cs
+D:\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.csproj.CoreCompileInputs.cache
+D:\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.dll
+D:\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.pdb
+D:\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.csprojAssemblyReference.cache

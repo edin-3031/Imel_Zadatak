@@ -59,9 +59,23 @@ namespace WebApplication1.Service
             return novi;
         }
 
-        public List<Zaposlenici> GetAll()
+        public List<Models.zaposlenici> GetAll(ZaposleniciSearchRequest request)
         {
-            return db.Zaposlenici.ToList();
+            var query = db.Zaposlenici.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(request?.Ime))
+            {
+                query = query.Where(x => x.Ime.StartsWith(request.Ime));
+            }
+
+            if (!string.IsNullOrWhiteSpace(request?.Prezime))
+            {
+                query = query.Where(x => x.Prezime.StartsWith(request.Prezime));
+            }
+
+            var lista = query.ToList();
+
+            return mapper.Map<List<Models.zaposlenici>>(lista);
         }
 
         public Zaposlenici Insert(Models.zaposlenici novi)

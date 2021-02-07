@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,9 +24,9 @@ namespace WebApplication1.Controllers
         } 
 
         [HttpGet]
-        public List<Zaposlenici> GetAll()
+        public List<Models.zaposlenici> GetAll([FromQuery]ZaposleniciSearchRequest request)
         {
-            return service_Zaposlenici.GetAll();
+            return service_Zaposlenici.GetAll(request);
         }
 
         [HttpDelete("{id}")]

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dektop app test\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
+    "D:\\Imel_Zadatak\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "D:\\Dektop app test\\WebApplication1\\Models\\Models.csproj": {
+    "D:\\Imel_Zadatak\\WebApplication1\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dektop app test\\WebApplication1\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\Imel_Zadatak\\WebApplication1\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "D:\\Dektop app test\\WebApplication1\\Models\\Models.csproj",
+        "projectPath": "D:\\Imel_Zadatak\\WebApplication1\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\Edin\\.nuget\\packages\\",
-        "outputPath": "D:\\Dektop app test\\WebApplication1\\Models\\obj\\",
+        "outputPath": "D:\\Imel_Zadatak\\WebApplication1\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -51,9 +51,13 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
             "System.ComponentModel.Annotations": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[4.4.0, )"
             }
           },
           "imports": [
@@ -70,14 +74,14 @@
         }
       }
     },
-    "D:\\Dektop app test\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
+    "D:\\Imel_Zadatak\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dektop app test\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "D:\\Imel_Zadatak\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "D:\\Dektop app test\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "D:\\Imel_Zadatak\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\Edin\\.nuget\\packages\\",
-        "outputPath": "D:\\Dektop app test\\WebApplication1\\WebApplication1\\obj\\",
+        "outputPath": "D:\\Imel_Zadatak\\WebApplication1\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -99,8 +103,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Dektop app test\\WebApplication1\\Models\\Models.csproj": {
-                "projectPath": "D:\\Dektop app test\\WebApplication1\\Models\\Models.csproj"
+              "D:\\Imel_Zadatak\\WebApplication1\\Models\\Models.csproj": {
+                "projectPath": "D:\\Imel_Zadatak\\WebApplication1\\Models\\Models.csproj"
               }
             }
           }

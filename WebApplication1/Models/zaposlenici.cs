@@ -7,6 +7,7 @@ namespace Models
 {
     public class zaposlenici
     {
+        public int Id { get; set; }
         [Required]
         public string Sifra { get; set; }
         [Required]

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "D0ewzqmKlNM6gCr6ikcIzlA6QohgkdwzQXAehQzrKB/BPDeMoCKmiZUS9ZbvoZ3UMUAklYdeER7Vv8ggUOsy9w==",
+  "dgSpecHash": "9ZJF1cpqnVF+6d/O6WaqLtRckPrLnJULMVhjflP/UJ7WO2hVzPgbVFK4K+0dxAzTLEHXMQ9Zw9l3iQeAicZq7Q==",
   "success": true,
-  "projectFilePath": "D:\\Dektop app test\\WebApplication1\\Models\\Models.csproj",
+  "projectFilePath": "D:\\Imel_Zadatak\\WebApplication1\\Models\\Models.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Edin\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\Edin\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Edin\\.nuget\\packages\\system.componentmodel.annotations\\4.4.0\\system.componentmodel.annotations.4.4.0.nupkg.sha512"
   ],
   "logs": []
 }
