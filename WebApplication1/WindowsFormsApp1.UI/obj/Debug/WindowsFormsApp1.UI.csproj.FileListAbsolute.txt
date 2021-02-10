@@ -21,3 +21,10 @@ D:\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\bin\Debug\Models.pdb
 D:\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\bin\Debug\Flurl.pdb
 D:\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\bin\Debug\Flurl.Http.pdb
 D:\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\obj\Debug\WindowsFormsApp1.UI.Zaposlenici.frmZaposlenikDetalji.resources
+D:\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\obj\Debug\WindowsFormsApp1.UI.Zaposlenici.frmZaposleniciUnos.resources
+D:\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\bin\Debug\System.Net.Http.Formatting.dll
+D:\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\bin\Debug\System.Net.Http.Formatting.xml
+D:\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\obj\Debug\WindowsFormsApp1.UI.Zaposlenici.frmZaposleniciUredi.resources
+D:\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\obj\Debug\WindowsFormsApp1.UI.Dogadjaji.frmDogadjajiUredi.resources
+D:\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\obj\Debug\WindowsFormsApp1.UI.Dogadjaji.frmDogadjajiUnos.resources

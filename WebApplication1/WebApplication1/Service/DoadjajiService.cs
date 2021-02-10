@@ -42,12 +42,35 @@ namespace WebApplication1.Service
             return temp;
         }
 
-        public List<ZaposleniciDogadjaji> Get(int id)
+        public List<Models.dogadjaji> Get(int id)
         {
-            return db.ZaposleniciDogadjaji.Where(a => a.ZaposleniciId == id).ToList();
+            var result= db.ZaposleniciDogadjaji.Where(a => a.ZaposleniciId == id).ToList();
+
+            List<Models.dogadjaji> final = new List<Models.dogadjaji>();
+
+            foreach(var x in result)
+            {
+                final.Add(new Models.dogadjaji
+                {
+                    Datum = x.Datum,
+                    Id = x.Id,
+                    TekstDogadjaja = x.TekstDogadjaja,
+                    ZaposleniciId=x.ZaposleniciId
+                });
+            }
+            return final;
+
+            //return mapper.Map<List<Models.dogadjaji>>(result);
         }
 
-        public Models.dogadjaji Insert(int id, Models.dogadjaji novi)
+
+        //public Models.dogadjaji getByIdDogadjaj(int id2)
+        //{
+        //    var result = db.ZaposleniciDogadjaji.Select(x => x.Id == id2).FirstOrDefault();
+
+        //    return mapper.Map<Models.dogadjaji>(result);
+        //}
+        public Models.dogadjaji Insert(Models.dogadjaji novi)
         {
             Database.ZaposleniciDogadjaji temp = mapper.Map<ZaposleniciDogadjaji>(novi);
             db.Add(temp);

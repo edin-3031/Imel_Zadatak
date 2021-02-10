@@ -10,7 +10,8 @@ namespace WebApplication1.Service
     public interface IZaposleniciService
     {
         public List<Models.zaposlenici> GetAll(ZaposleniciSearchRequest request);
-        public Zaposlenici Insert(Models.zaposlenici novi);
+        public Models.zaposlenici GetById(int id);
+        public Models.zaposlenici InsertNew(Models.zaposlenici novi);
         public Models.zaposlenici Edit(int id, Models.zaposlenici novi);
         public void Delete(int id);
     }

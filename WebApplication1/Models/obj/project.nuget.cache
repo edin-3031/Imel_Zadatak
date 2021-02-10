@@ -1,13 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "9ZJF1cpqnVF+6d/O6WaqLtRckPrLnJULMVhjflP/UJ7WO2hVzPgbVFK4K+0dxAzTLEHXMQ9Zw9l3iQeAicZq7Q==",
+  "dgSpecHash": "kNhtgpGQsrilatRdDyjRwBjufKEh0tgVEJ2lA+IQw/KeUVuuyClFQtESc+CIrYUp0RWJaKYalRnOYtBIMsUOyQ==",
   "success": true,
   "projectFilePath": "D:\\Imel_Zadatak\\WebApplication1\\Models\\Models.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Edin\\.nuget\\packages\\flurl\\3.0.1\\flurl.3.0.1.nupkg.sha512",
+    "C:\\Users\\Edin\\.nuget\\packages\\flurl.http\\3.0.1\\flurl.http.3.0.1.nupkg.sha512",
+    "C:\\Users\\Edin\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Edin\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
-    "C:\\Users\\Edin\\.nuget\\packages\\system.componentmodel.annotations\\4.4.0\\system.componentmodel.annotations.4.4.0.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\Edin\\.nuget\\packages\\system.componentmodel.annotations\\4.4.0\\system.componentmodel.annotations.4.4.0.nupkg.sha512",
+    "C:\\Users\\Edin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Edin\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512"
   ],
   "logs": []
 }

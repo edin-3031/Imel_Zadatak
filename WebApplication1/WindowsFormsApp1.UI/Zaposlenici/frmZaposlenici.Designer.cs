@@ -33,14 +33,18 @@ namespace WindowsFormsApp1.UI.Zaposlenici
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvZaposlenici = new System.Windows.Forms.DataGridView();
-            this.btnTrazi = new System.Windows.Forms.Button();
-            this.txtPretraga = new System.Windows.Forms.TextBox();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sifra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DatumDodavanja = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DatumIzmjene = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Detalji = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Ukloni = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnTrazi = new System.Windows.Forms.Button();
+            this.txtPretraga = new System.Windows.Forms.TextBox();
+            this.lblTrazilica = new System.Windows.Forms.Label();
+            this.btnDodaj = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvZaposlenici)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +57,7 @@ namespace WindowsFormsApp1.UI.Zaposlenici
             this.groupBox1.Controls.Add(this.dgvZaposlenici);
             this.groupBox1.Location = new System.Drawing.Point(12, 108);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(656, 339);
+            this.groupBox1.Size = new System.Drawing.Size(757, 339);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lista Zaposlenici";
@@ -75,12 +79,14 @@ namespace WindowsFormsApp1.UI.Zaposlenici
             this.dgvZaposlenici.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvZaposlenici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvZaposlenici.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
             this.Sifra,
             this.Ime,
             this.Prezime,
             this.DatumDodavanja,
             this.DatumIzmjene,
-            this.Detalji});
+            this.Detalji,
+            this.Ukloni});
             this.dgvZaposlenici.Location = new System.Drawing.Point(7, 19);
             this.dgvZaposlenici.Name = "dgvZaposlenici";
             this.dgvZaposlenici.ReadOnly = true;
@@ -92,26 +98,18 @@ namespace WindowsFormsApp1.UI.Zaposlenici
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvZaposlenici.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvZaposlenici.Size = new System.Drawing.Size(643, 311);
+            this.dgvZaposlenici.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvZaposlenici.Size = new System.Drawing.Size(743, 311);
             this.dgvZaposlenici.TabIndex = 0;
             this.dgvZaposlenici.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // btnTrazi
+            // Id
             // 
-            this.btnTrazi.Location = new System.Drawing.Point(30, 79);
-            this.btnTrazi.Name = "btnTrazi";
-            this.btnTrazi.Size = new System.Drawing.Size(75, 23);
-            this.btnTrazi.TabIndex = 1;
-            this.btnTrazi.Text = "Traži";
-            this.btnTrazi.UseVisualStyleBackColor = true;
-            this.btnTrazi.Click += new System.EventHandler(this.btnTrazi_Click);
-            // 
-            // txtPretraga
-            // 
-            this.txtPretraga.Location = new System.Drawing.Point(112, 79);
-            this.txtPretraga.Name = "txtPretraga";
-            this.txtPretraga.Size = new System.Drawing.Size(301, 20);
-            this.txtPretraga.TabIndex = 2;
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
             // 
             // Sifra
             // 
@@ -157,16 +155,65 @@ namespace WindowsFormsApp1.UI.Zaposlenici
             this.Detalji.ToolTipText = "Detalji";
             this.Detalji.UseColumnTextForButtonValue = true;
             // 
+            // Ukloni
+            // 
+            this.Ukloni.HeaderText = "Uklanjanje";
+            this.Ukloni.Name = "Ukloni";
+            this.Ukloni.ReadOnly = true;
+            this.Ukloni.Text = "Ukloni";
+            this.Ukloni.ToolTipText = "Ukloni";
+            this.Ukloni.UseColumnTextForButtonValue = true;
+            // 
+            // btnTrazi
+            // 
+            this.btnTrazi.Location = new System.Drawing.Point(325, 79);
+            this.btnTrazi.Name = "btnTrazi";
+            this.btnTrazi.Size = new System.Drawing.Size(75, 23);
+            this.btnTrazi.TabIndex = 1;
+            this.btnTrazi.Text = "Traži";
+            this.btnTrazi.UseVisualStyleBackColor = true;
+            this.btnTrazi.Click += new System.EventHandler(this.btnTrazi_Click);
+            // 
+            // txtPretraga
+            // 
+            this.txtPretraga.Location = new System.Drawing.Point(18, 81);
+            this.txtPretraga.Name = "txtPretraga";
+            this.txtPretraga.Size = new System.Drawing.Size(301, 20);
+            this.txtPretraga.TabIndex = 2;
+            this.txtPretraga.TextChanged += new System.EventHandler(this.txtPretraga_TextChanged);
+            // 
+            // lblTrazilica
+            // 
+            this.lblTrazilica.AutoSize = true;
+            this.lblTrazilica.Location = new System.Drawing.Point(15, 65);
+            this.lblTrazilica.Name = "lblTrazilica";
+            this.lblTrazilica.Size = new System.Drawing.Size(66, 13);
+            this.lblTrazilica.TabIndex = 3;
+            this.lblTrazilica.Text = "Ime/Prezime";
+            // 
+            // btnDodaj
+            // 
+            this.btnDodaj.Location = new System.Drawing.Point(687, 79);
+            this.btnDodaj.Name = "btnDodaj";
+            this.btnDodaj.Size = new System.Drawing.Size(75, 23);
+            this.btnDodaj.TabIndex = 4;
+            this.btnDodaj.Text = "Dodaj novi";
+            this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
+            // 
             // frmZaposlenici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 450);
+            this.ClientSize = new System.Drawing.Size(781, 450);
+            this.Controls.Add(this.btnDodaj);
+            this.Controls.Add(this.lblTrazilica);
             this.Controls.Add(this.txtPretraga);
             this.Controls.Add(this.btnTrazi);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmZaposlenici";
             this.Text = "frmZaposlenici";
+            this.Load += new System.EventHandler(this.frmZaposlenici_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvZaposlenici)).EndInit();
             this.ResumeLayout(false);
@@ -180,11 +227,15 @@ namespace WindowsFormsApp1.UI.Zaposlenici
         private System.Windows.Forms.DataGridView dgvZaposlenici;
         private System.Windows.Forms.Button btnTrazi;
         private System.Windows.Forms.TextBox txtPretraga;
+        private System.Windows.Forms.Label lblTrazilica;
+        private System.Windows.Forms.Button btnDodaj;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sifra;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ime;
         private System.Windows.Forms.DataGridViewTextBoxColumn Prezime;
         private System.Windows.Forms.DataGridViewTextBoxColumn DatumDodavanja;
         private System.Windows.Forms.DataGridViewTextBoxColumn DatumIzmjene;
         private System.Windows.Forms.DataGridViewButtonColumn Detalji;
+        private System.Windows.Forms.DataGridViewButtonColumn Ukloni;
     }
 }

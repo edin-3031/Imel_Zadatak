@@ -21,12 +21,24 @@ namespace WebApplication1.Controllers
         {
             service_Zaposlenici = _service_Zaposlenici;
 
-        } 
+        }
 
         [HttpGet]
-        public List<Models.zaposlenici> GetAll([FromQuery]ZaposleniciSearchRequest request)
+        public List<Models.zaposlenici> GetAll([FromQuery] ZaposleniciSearchRequest request)
         {
             return service_Zaposlenici.GetAll(request);
+        }
+
+        [HttpGet("{id}")]
+        public Models.zaposlenici GetById(int id)
+        {
+            return service_Zaposlenici.GetById(id);
+        }
+
+        [HttpPost]
+        public void InsertNew([FromBody]Models.zaposlenici novi)
+        {
+            service_Zaposlenici.InsertNew(novi);
         }
 
         [HttpDelete("{id}")]
@@ -34,13 +46,6 @@ namespace WebApplication1.Controllers
         {
             service_Zaposlenici.Delete(id);
         }
-
-        [HttpPost("{novi}")]
-        public Zaposlenici Insert (Models.zaposlenici novi)
-        {
-            return service_Zaposlenici.Insert(novi);
-        }
-
 
         [HttpPut("{id}")]
         public Models.zaposlenici Edit(int id, Models.zaposlenici novi)

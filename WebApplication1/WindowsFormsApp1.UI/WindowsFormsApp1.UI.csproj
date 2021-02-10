@@ -48,6 +48,9 @@
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
@@ -63,6 +66,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APIService.cs" />
+    <Compile Include="Dogadjaji\frmDogadjajiUnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dogadjaji\frmDogadjajiUnos.Designer.cs">
+      <DependentUpon>frmDogadjajiUnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dogadjaji\frmDogadjajiUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dogadjaji\frmDogadjajiUredi.Designer.cs">
+      <DependentUpon>frmDogadjajiUredi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +93,30 @@
     <Compile Include="Zaposlenici\frmZaposlenici.Designer.cs">
       <DependentUpon>frmZaposlenici.cs</DependentUpon>
     </Compile>
+    <Compile Include="Zaposlenici\frmZaposleniciUnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zaposlenici\frmZaposleniciUnos.Designer.cs">
+      <DependentUpon>frmZaposleniciUnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zaposlenici\frmZaposleniciUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zaposlenici\frmZaposleniciUredi.Designer.cs">
+      <DependentUpon>frmZaposleniciUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zaposlenici\frmZaposlenikDetalji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zaposlenici\frmZaposlenikDetalji.Designer.cs">
+      <DependentUpon>frmZaposlenikDetalji.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dogadjaji\frmDogadjajiUnos.resx">
+      <DependentUpon>frmDogadjajiUnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dogadjaji\frmDogadjajiUredi.resx">
+      <DependentUpon>frmDogadjajiUredi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -89,6 +128,15 @@
     </Compile>
     <EmbeddedResource Include="Zaposlenici\frmZaposlenici.resx">
       <DependentUpon>frmZaposlenici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zaposlenici\frmZaposleniciUnos.resx">
+      <DependentUpon>frmZaposleniciUnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zaposlenici\frmZaposleniciUredi.resx">
+      <DependentUpon>frmZaposleniciUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zaposlenici\frmZaposlenikDetalji.resx">
+      <DependentUpon>frmZaposlenikDetalji.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -104,9 +152,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dogadjaji\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{3596f0cd-787c-4302-9ef8-9dc1274e743c}</Project>

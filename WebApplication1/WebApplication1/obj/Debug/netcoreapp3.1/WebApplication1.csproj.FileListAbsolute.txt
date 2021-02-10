@@ -209,3 +209,7 @@ D:\Imel_Zadatak\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebAppli
 D:\Imel_Zadatak\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.dll
 D:\Imel_Zadatak\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.pdb
 D:\Imel_Zadatak\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
+D:\Imel_Zadatak\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+D:\Imel_Zadatak\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\Imel_Zadatak\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Flurl.dll
+D:\Imel_Zadatak\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Flurl.Http.dll

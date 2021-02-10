@@ -78,14 +78,31 @@ namespace WebApplication1.Service
             return mapper.Map<List<Models.zaposlenici>>(lista);
         }
 
-        public Zaposlenici Insert(Models.zaposlenici novi)
+        public zaposlenici GetById(int id)
         {
-            Zaposlenici temp=mapper.Map<Zaposlenici>(novi);
+            var result = db.Zaposlenici.Where(a=>a.Id==id).FirstOrDefault();
+
+            return mapper.Map<Models.zaposlenici>(result);
+        }
+
+        public Models.zaposlenici InsertNew(Models.zaposlenici novi)
+        {
+            Zaposlenici temp = new Zaposlenici
+            {
+                Adresa = novi.Adresa,
+                DatumDodavanja = novi.DatumDodavanja,
+                DatumIzmjene = novi.DatumIzmjene,
+                Grad = novi.Grad,
+                Ime = novi.Ime,
+                Pol = novi.Pol,
+                Prezime = novi.Prezime,
+                Sifra = novi.Sifra
+            };
 
             db.Add(temp);
             db.SaveChanges();
 
-            return temp;
+            return novi;
         }
     }
 }

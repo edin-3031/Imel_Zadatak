@@ -12,6 +12,7 @@ namespace WebApplication1.Mappers
         {
             CreateMap<Database.Zaposlenici, Models.zaposlenici>().ReverseMap();
             CreateMap<Models.dogadjaji, Database.ZaposleniciDogadjaji>().ReverseMap();
+            CreateMap<List<Models.dogadjaji>, List<Database.ZaposleniciDogadjaji>>().ReverseMap();
         }
     }
 }

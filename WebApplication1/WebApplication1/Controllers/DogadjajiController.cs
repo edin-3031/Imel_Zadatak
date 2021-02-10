@@ -20,15 +20,21 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet("{id}")]
-        public List<ZaposleniciDogadjaji> GetAll(int id)
+        public List<Models.dogadjaji> GetById(int id)
         {
             return service_dogadjaj.Get(id);
         }
 
-        [HttpPost("{id}")]
-        public Models.dogadjaji Insert(int id, Models.dogadjaji novi)
+        //[HttpGet("{id2}")]
+        //public Models.dogadjaji Get(int id)
+        //{
+        //    return service_dogadjaj.getByIdDogadjaj(id, true);
+        //}
+
+        [HttpPost]
+        public void Insert([FromBody]Models.dogadjaji novi)
         {
-            return service_dogadjaj.Insert(id,novi);
+            service_dogadjaj.Insert(novi);
         }
 
         [HttpDelete("{id}")]
