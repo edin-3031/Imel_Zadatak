@@ -58,3 +58,4 @@ C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\obj\Debug
 C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\obj\Debug\WindowsFormsApp1.UI.csproj.CopyComplete
 C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\obj\Debug\WindowsFormsApp1.UI.exe
 C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\obj\Debug\WindowsFormsApp1.UI.pdb
+C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\WindowsFormsApp1.UI\obj\Debug\WindowsFormsApp1.UI.MDIParent1.resources

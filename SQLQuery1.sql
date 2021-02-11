@@ -24,7 +24,3 @@ Zaposlenici_Id SMALLINT FOREIGN KEY REFERENCES Zaposlenici(Id) NULL,
 Datum DATETIME NULL,
 TekstDogadjaja VARCHAR(1000) NULL
 );
-
-select * from Zaposlenici_Dogadjaji;
-
-select * from Zaposlenici;

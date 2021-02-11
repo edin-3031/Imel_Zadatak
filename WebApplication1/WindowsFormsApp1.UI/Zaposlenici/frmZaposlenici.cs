@@ -82,6 +82,7 @@ namespace WindowsFormsApp1.UI.Zaposlenici
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             frmZaposleniciUnos frm = new frmZaposleniciUnos();
+
             frm.Show();
         }
 

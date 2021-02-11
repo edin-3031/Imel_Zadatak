@@ -17,7 +17,7 @@ namespace WindowsFormsApp1.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmZaposlenici());
+            Application.Run(new MDIParent1());
         }
     }
 }
