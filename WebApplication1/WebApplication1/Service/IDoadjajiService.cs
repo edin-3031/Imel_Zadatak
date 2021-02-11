@@ -12,6 +12,6 @@ namespace WebApplication1.Service
         public Models.dogadjaji Insert(Models.dogadjaji novi);
         public ZaposleniciDogadjaji Edit(int id, Models.dogadjaji novi);
         public void Delete(int id);
-        //public Models.dogadjaji getByIdDogadjaj(int id2);
+        public Models.dogadjaji getByIdDogadjaj(int id);
     }
 }

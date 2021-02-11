@@ -34,14 +34,24 @@ namespace WindowsFormsApp1.UI.Dogadjaji
 
         private async void btnSacuvaj_Click(object sender, EventArgs e)
         {
-            Models.dogadjaji temp= new Models.dogadjaji
+            if (string.IsNullOrWhiteSpace(rtbTekst.Text))
             {
-                Datum = dateDatum.Value,
-                TekstDogadjaja = rtbTekst.Text,
-                ZaposleniciId = (short)id
-            };
+                MessageBox.Show("Polje sa tekstom događaja ne može biti prazno", "Upozorenje", MessageBoxButtons.OK);
+            }
+            else
+            {
+                Models.dogadjaji temp = new Models.dogadjaji
+                {
+                    Datum = dateDatum.Value,
+                    TekstDogadjaja = rtbTekst.Text,
+                    ZaposleniciId = (short)id
+                };
 
-            await service_dogadjaji.InsertNewDogadjaj<Models.dogadjaji>(temp);
+                await service_dogadjaji.InsertNewDogadjaj<Models.dogadjaji>(temp);
+
+                Form.ActiveForm.Close();
+            }
+
         }
 
         private void rtbTekst_Validating(object sender, CancelEventArgs e)

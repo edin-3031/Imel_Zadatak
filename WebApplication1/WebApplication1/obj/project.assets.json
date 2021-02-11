@@ -7423,11 +7423,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Imel_Zadatak\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\Edin\\Desktop\\Imel_Zadatak\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "D:\\Imel_Zadatak\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectPath": "C:\\Users\\Edin\\Desktop\\Imel_Zadatak\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
       "packagesPath": "C:\\Users\\Edin\\.nuget\\packages\\",
-      "outputPath": "D:\\Imel_Zadatak\\WebApplication1\\WebApplication1\\obj\\",
+      "outputPath": "C:\\Users\\Edin\\Desktop\\Imel_Zadatak\\WebApplication1\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -7449,8 +7449,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Imel_Zadatak\\WebApplication1\\Models\\Models.csproj": {
-              "projectPath": "D:\\Imel_Zadatak\\WebApplication1\\Models\\Models.csproj"
+            "C:\\Users\\Edin\\Desktop\\Imel_Zadatak\\WebApplication1\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Edin\\Desktop\\Imel_Zadatak\\WebApplication1\\Models\\Models.csproj"
             }
           }
         }
@@ -7522,7 +7522,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

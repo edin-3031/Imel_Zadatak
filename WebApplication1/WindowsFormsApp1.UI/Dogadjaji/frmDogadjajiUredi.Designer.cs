@@ -42,6 +42,7 @@ namespace WindowsFormsApp1.UI.Dogadjaji
             // 
             this.txtDatum.Location = new System.Drawing.Point(37, 59);
             this.txtDatum.Name = "txtDatum";
+            this.txtDatum.ReadOnly = true;
             this.txtDatum.Size = new System.Drawing.Size(180, 20);
             this.txtDatum.TabIndex = 0;
             // 
@@ -71,6 +72,7 @@ namespace WindowsFormsApp1.UI.Dogadjaji
             this.rtbTekst.Size = new System.Drawing.Size(542, 234);
             this.rtbTekst.TabIndex = 4;
             this.rtbTekst.Text = "";
+            this.rtbTekst.Validating += new System.ComponentModel.CancelEventHandler(this.rtbTekst_Validating);
             // 
             // btnSacuvaj
             // 
@@ -80,11 +82,13 @@ namespace WindowsFormsApp1.UI.Dogadjaji
             this.btnSacuvaj.TabIndex = 5;
             this.btnSacuvaj.Text = "Sačuvaj";
             this.btnSacuvaj.UseVisualStyleBackColor = true;
+            this.btnSacuvaj.Click += new System.EventHandler(this.btnSacuvaj_Click);
             // 
             // txtZaposlenik
             // 
             this.txtZaposlenik.Location = new System.Drawing.Point(277, 59);
             this.txtZaposlenik.Name = "txtZaposlenik";
+            this.txtZaposlenik.ReadOnly = true;
             this.txtZaposlenik.Size = new System.Drawing.Size(180, 20);
             this.txtZaposlenik.TabIndex = 6;
             // 

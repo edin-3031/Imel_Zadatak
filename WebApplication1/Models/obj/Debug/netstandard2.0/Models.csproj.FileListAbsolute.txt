@@ -16,3 +16,12 @@ D:\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.csproj.Co
 D:\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.dll
 D:\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.pdb
 D:\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.csprojAssemblyReference.cache
+C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\Models\bin\Debug\netstandard2.0\Models.deps.json
+C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\Models\bin\Debug\netstandard2.0\Models.dll
+C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\Models\bin\Debug\netstandard2.0\Models.pdb
+C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.csprojAssemblyReference.cache
+C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.AssemblyInfoInputs.cache
+C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.AssemblyInfo.cs
+C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.dll
+C:\Users\Edin\Desktop\Imel_Zadatak\WebApplication1\Models\obj\Debug\netstandard2.0\Models.pdb

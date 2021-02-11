@@ -22,6 +22,7 @@ namespace WindowsFormsApp1.UI.Zaposlenici
             InitializeComponent();
 
             dgvZaposlenici.AutoGenerateColumns = false;
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -85,6 +86,16 @@ namespace WindowsFormsApp1.UI.Zaposlenici
         }
 
         private void txtPretraga_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmZaposlenici_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmZaposlenici_MouseMove(object sender, MouseEventArgs e)
         {
 
         }

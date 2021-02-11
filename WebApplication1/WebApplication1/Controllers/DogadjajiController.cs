@@ -25,11 +25,11 @@ namespace WebApplication1.Controllers
             return service_dogadjaj.Get(id);
         }
 
-        //[HttpGet("{id2}")]
-        //public Models.dogadjaji Get(int id)
-        //{
-        //    return service_dogadjaj.getByIdDogadjaj(id, true);
-        //}
+        [HttpGet("dogadjaji/{id}")]
+        public Models.dogadjaji Get(int id)
+        {
+            return service_dogadjaj.getByIdDogadjaj(id);
+        }
 
         [HttpPost]
         public void Insert([FromBody]Models.dogadjaji novi)

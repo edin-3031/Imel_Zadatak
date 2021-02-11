@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,13 +64,13 @@ namespace WebApplication1.Service
             //return mapper.Map<List<Models.dogadjaji>>(result);
         }
 
+        public dogadjaji getByIdDogadjaj(int id)
+        {
+            var result = db.ZaposleniciDogadjaji.Where(a => a.Id == id).FirstOrDefault();
 
-        //public Models.dogadjaji getByIdDogadjaj(int id2)
-        //{
-        //    var result = db.ZaposleniciDogadjaji.Select(x => x.Id == id2).FirstOrDefault();
+            return mapper.Map<Models.dogadjaji>(result);
+        }
 
-        //    return mapper.Map<Models.dogadjaji>(result);
-        //}
         public Models.dogadjaji Insert(Models.dogadjaji novi)
         {
             Database.ZaposleniciDogadjaji temp = mapper.Map<ZaposleniciDogadjaji>(novi);

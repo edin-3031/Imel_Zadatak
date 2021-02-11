@@ -8,21 +8,13 @@ namespace Models
     public class zaposlenici
     {
         public int Id { get; set; }
-        [Required]
         public string Sifra { get; set; }
-        [Required]
         public string Prezime { get; set; }
-        [Required]
         public string Ime { get; set; }
-        [Required]
         public byte? Pol { get; set; }
-        [Required]
         public string Grad { get; set; }
-        [Required]
         public string Adresa { get; set; }
-        [Required]
         public DateTime? DatumDodavanja { get; set; }
-        [Required]
         public DateTime? DatumIzmjene { get; set; }
     }
 }

@@ -34,9 +34,9 @@ namespace WindowsFormsApp1.UI
             return result;
         }
 
-        public async Task<T> GetById<T>(object id2)
+        public async Task<T> GetById<T>(object id)
         {
-            var url = $"{Properties.Settings.Default.APIUrl}/{route}/{id2}";
+            var url = $"{Properties.Settings.Default.APIUrl}/{route}/{id}";
 
             var result = await url.GetJsonAsync<T>();
 

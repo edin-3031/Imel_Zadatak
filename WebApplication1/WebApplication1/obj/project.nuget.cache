@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UBFrHaIK/zmeycCzaCMAN+ZVZd1zsybpbC+/b6bZgQVp/oe3+eZL5PsAKCoUls/YWbLcjyfGQeCoQEmCT9x7Dg==",
+  "dgSpecHash": "x+YzS+kXbzWIjg6eKHCXpTZr4pWX2K0kmytB32jcZjDzDg1ujSwJ0aU8FeG+/S5pP6JHnpq1FwsD4fIyiWWmUQ==",
   "success": true,
-  "projectFilePath": "D:\\Imel_Zadatak\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\Edin\\Desktop\\Imel_Zadatak\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Edin\\.nuget\\packages\\automapper\\8.0.0\\automapper.8.0.0.nupkg.sha512",
     "C:\\Users\\Edin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.0.0\\automapper.extensions.microsoft.dependencyinjection.6.0.0.nupkg.sha512",
